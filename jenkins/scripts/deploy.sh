@@ -8,12 +8,3 @@ set +x
 echo 'Now...'
 echo 'Visit http://fck la to see your PHP application in action.'
 
-
-
-
-docker run --rm --detach -u root --name my-apache-php-app
---volume "$PWD":/root/jenkins-php-selenium-test/jenkins-php-selenium-test/src
---volume "%HOMEDRIVE%%HOMEPATH%":/home
---volume /var/run/docker.sock:/var/run/docker.sock
---publish 8080:8080 jenkinsci/blueocean
-
